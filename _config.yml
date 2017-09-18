@@ -1,19 +1,19 @@
 # Site settings
 title: Sandra Blog
 SEOTitle: 张舒的博客 | Sandra Blog
-header-img: img/home-bg.jpg
+header-img: img/bg.jpg
 email: zhangshugar@163.com
 description: “"
 keyword: "张舒, Sandra,数据,Leetcode,data science"
-url: ""              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+#url: ""              # your host, for absolute URL
+#baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
 weibo_username:     Sandrabaa
-zhihu_username:     Sandraaaa
+zhihu_username:     Sandrabaaa
 github_username:    SandraShu
 #twitter_username:   
 #facebook_username:  huxpro
