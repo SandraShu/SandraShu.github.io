@@ -2,8 +2,8 @@
 layout:     post
 title:      "1. Two Sum"
 subtitle:   "Leetcode 1. Two Sum"
-date:       Thu Sep 14 10:25:17 2017
-author:     "Sandra"
+date:       2017-09-14 10:25:17
+author:     "Sandra"
 catalog: true
 tags:
     - Leetcode
