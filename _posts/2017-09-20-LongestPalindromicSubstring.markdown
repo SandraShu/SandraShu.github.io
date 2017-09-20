@@ -45,11 +45,11 @@ Given a string s, find the longest palindromic substring in s. You may assume th
                 left = i - 1               
                 right = i + 1
                 
-                #print(left,right)
+                # print(left,right)
                 
                 while left>=0 and right<num and s[left]==s[right]:
                     
-                    print(left,right)
+                    # print(left,right)
                     
                     if right-left+1 > length:
                         
@@ -65,11 +65,11 @@ Given a string s, find the longest palindromic substring in s. You may assume th
                 left = i                
                 right = i + 1
                 
-                #print(left,right)
+                # print(left,right)
                 
                 while left>=0 and right<num and s[left]==s[right]:
                     
-                    print(left,right)
+                    # print(left,right)
                     
                     if right-left+1 > length:
                         
