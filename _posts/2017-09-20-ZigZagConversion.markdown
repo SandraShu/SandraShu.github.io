@@ -26,8 +26,6 @@ string convert(string text, int nRows);
 
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
-==>最长回文子串
-
 ## Solution
     class Solution(object):
         def convert(self, s, numRows):
