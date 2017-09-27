@@ -48,6 +48,6 @@ tags:
         
         # 判断类别
         if np.dot(a,x)+b > 0:
-        print('w1')
-    else:
-        print('w2')
+            print('w1')
+        else:
+            print('w2')
