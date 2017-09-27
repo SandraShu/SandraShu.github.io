@@ -13,7 +13,7 @@ tags:
 
 ## Description:
 
-<img src="img/in-post/perceptron-1.png">
-<img src="img/in-post/perceptron-2.jpg">
+<img src="/img/in-post/perceptron-1.png">
+<img src="/img/in-post/perceptron-2.jpg">
 
 ## Solution
