@@ -1,0 +1,91 @@
+---
+layout:     post
+title:      "18. 4Sum"
+subtitle:   "18. 4Sum"
+date:       2017-11-14 17:24:22 
+author:     "Sandra"
+catalog: true
+tags:
+    - Leetcode
+---
+
+# 18. 4Sum
+
+## Description:
+
+Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+Note: The solution set must not contain duplicate quadruplets.
+
+    For example, given array S = [1, 0, -1, 0, -2, 2], and target = 0.
+
+    A solution set is:
+    [
+      [-1,  0, 0, 1],
+      [-2, -1, 1, 2],
+      [-2,  0, 0, 2]
+    ]
+
+## Solution
+    import copy
+    class Solution(object):
+        # 求四数之和
+        def fourSum(self, nums, target):
+            """
+            :type nums: List[int]
+            :type target: int
+            :rtype: List[List[int]]
+            """
+            # length of nums
+            if len(nums) < 4:
+                return []
+            # four same number
+            result = []
+            for x in set(nums):
+                if nums.count(x) > 3 and x*4 == target:
+                    result.append([x,x,x,x])
+            # max or min
+            nums.sort()
+            if nums[len(nums)-1] + nums[len(nums)-2] + nums[len(nums)-3] + nums[len(nums)-4] < target or nums[0] + nums[1] + nums[2] + nums[3] > target:
+                return []
+            # first two sum
+            fd = self.twoSum(nums)
+            # second two sum
+            sd = self.twoSum(fd.keys())
+            # not exist target
+            if target not in sd:
+                return result
+            # find target
+            for x in sd[target]:
+                for i in range(len(fd[x[0]])):
+                    for j in range(len(fd[x[1]])):
+                        # four sum
+                        temp = fd[x[0]][i] + fd[x[1]][j]
+                        # sort
+                        temp.sort()
+                        # not contain duplicate quadruplets
+                        if temp not in result:
+                            # duplicate item
+                            nums_t = copy.deepcopy(nums)
+                            flag = True
+                            for a in temp:
+                                if a in nums_t:
+                                    nums_t.remove(a)
+                                else:
+                                    flag = False
+                                    break
+                            if flag == True:
+                                result.append(temp)
+            return result
+
+        # 求两数之和
+        def twoSum(self,nums):
+            # 求两两之和
+            d={}
+            for i in range(len(nums)-1):
+                for j in range(i+1,len(nums)):              
+                    if nums[i]+nums[j] not in d:
+                        d[nums[i]+nums[j]] = []
+                    d[nums[i]+nums[j]].append([nums[i],nums[j]])
+            # 返回两两求和的字典，key为和值，value为元素
+            return d
