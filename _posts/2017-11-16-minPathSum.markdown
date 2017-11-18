@@ -7,6 +7,7 @@ author:     "Sandra"
 catalog: true
 tags:
     - Leetcode
+    - Dynamic Programming
 ---
 
 # 64. Minimum Path Sum
