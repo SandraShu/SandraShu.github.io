@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "523. Continuous Subarray Sum"
-subtitle:   "Leetcode 523. Continuous Subarray Sum"
+title:      "646. Maximum Length of Pair Chain"
+subtitle:   "Leetcode 646. Maximum Length of Pair Chain"
 date:       2017-11-18 16:49:22 
 author:     "Sandra"
 catalog: true
@@ -10,7 +10,7 @@ tags:
     - Dynamic Programming
 ---
 
-# 523. Continuous Subarray Sum
+# 646. Maximum Length of Pair Chain
 
 ## Description:
 
