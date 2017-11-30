@@ -19,7 +19,11 @@ tags:
 
 + 噪声：表达了在当前学习任务上任何学习算法所能达到的期望泛化误差的下界，刻画了学习问题本身的难度
 
+<img src="/img/in-post/bias&variance-1.png">
+
 <strong>泛化性能是由学习算法的能力，数据的充分性，以及学习任务本身的难度所共同决定的</strong>
+
+<img src="/img/in-post/bias&variance-2.png">
 
 充分拟合数据
  -> 模型复杂度增加
