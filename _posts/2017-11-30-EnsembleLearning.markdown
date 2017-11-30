@@ -24,6 +24,22 @@ tags:
 + Bagging：
 	个体学习器不存在强依赖，可以并行生成。从训练集从进行子抽样组成每个基模型所需要的子训练集，对所有基模型预测的结果进行综合产生最终的预测结果。代表：Random Forest
 
-方差与偏差
-[Bias & Variance](https://sandrashu.github.io/2017/11/30/bias&variance/)
 
+Question: 
+xgboost/gbdt在调参时为什么树的深度很少就能达到很高的精度？
+用xgboost/gbdt在在调参的时候把树的最大深度调成6就有很高的精度了。但是用DecisionTree/RandomForest的时候需要把树的深度调到15或更高。
+
+Answer:
+从方差与偏差的角度来解释:
+[Bias & Variance回顾](https://sandrashu.github.io/2017/11/30/bias&variance/)
++ Boosting:
+因为:每一步都在上一步基础上更好的拟合数据->能够保证偏差
+所以:对于每个基分类器来说，目标则为降低方差
+所以:应选择更简单的分类器，降低复杂度
+例如很浅的决策树
++ Bagging:
+因为:并行的训练不同分类器->能够保证方差
+又因为:并且有多个相互独立的基分类器
+所以:对每个基分类器来说，目标是降低偏差
+所以:应选择更加复杂的分类器，
+例如深度很深不剪枝的决策树
