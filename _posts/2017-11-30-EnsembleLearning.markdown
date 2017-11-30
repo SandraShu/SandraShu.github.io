@@ -24,3 +24,6 @@ tags:
 + Bagging：
 	个体学习器不存在强依赖，可以并行生成。从训练集从进行子抽样组成每个基模型所需要的子训练集，对所有基模型预测的结果进行综合产生最终的预测结果。代表：Random Forest
 
+方差与偏差
+[Bias & Variance](https://sandrashu.github.io/2017/11/30/bias&variance/)
+
