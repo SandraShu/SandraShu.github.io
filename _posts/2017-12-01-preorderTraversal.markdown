@@ -33,8 +33,8 @@ Note: Recursive solution is trivial, could you do it iteratively?
 ## Solution
 
 !!!敲重点!!!
-迭代: 更新变量的旧值, 循环结构，例如for，while循环
-递归: 在函数内部调用自身, 选择结构，例如if else 调用自己，并在合适时机退出
+- 迭代: 更新变量的旧值, 循环结构，例如for，while循环
+- 递归: 在函数内部调用自身, 选择结构，例如if else 调用自己，并在合适时机退出
     
     # 分别使用递归与迭代的方式实现
     class Solution(object):
