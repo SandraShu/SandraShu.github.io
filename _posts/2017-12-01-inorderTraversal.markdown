@@ -19,9 +19,9 @@ Given a binary tree, return the inorder traversal of its nodes' values.
 For example:
 Given binary tree [1,null,2,3],
 <p>1</p>
-<p>&nbsp;\&nbsp;</p>
-<p>&nbsp;&nbsp;2&nbsp;&nbsp;</p>
-<p>&nbsp;/&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;\</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;/</p>
 <p>3</p>
 return [1,3,2].
 
