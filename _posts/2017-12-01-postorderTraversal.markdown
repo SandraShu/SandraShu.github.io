@@ -28,7 +28,7 @@ return [3,2,1].
 
 Note: Recursive solution is trivial, could you do it iteratively?
 
-二叉树的前序遍历: 根节点->左子树->右子树
+二叉树的后序遍历: 左子树->右子树->根节点
 
 ## Solution   
     class Solution(object):
