@@ -23,16 +23,16 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 
 Example 1:
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2
-<p>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\
-<p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3
-Binary tree [2,1,3], return true.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\</p>
+<p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p>
+<p>Binary tree [2,1,3], return true.</p>
 
 Example 2:
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
-<p>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\
-<p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3
-Binary tree [1,2,3], return false.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\</p>
+<p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p>
+<p>Binary tree [1,2,3], return false.</p>
 
 
 ## Solution
