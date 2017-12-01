@@ -18,17 +18,17 @@ Given a binary tree, return the inorder traversal of its nodes' values.
 
 For example:
 Given binary tree [1,null,2,3],
-   1
-    \
-     2
-    /
-   3
+<p>   1      </p>
+<p>     \    </p>
+<p>      2   </p>
+<p>     /    </p>
+<p>   3      </p>
 return [1,3,2].
 
 嘛其实就是二叉树的中序遍历~
 
 ## Solution
-# Definition for a binary tree node.
+    # Definition for a binary tree node.
     class TreeNode(object):
         def __init__(self, x):
             self.val = x
