@@ -25,6 +25,8 @@ Given binary tree [1,null,2,3],
    3
 return [1,3,2].
 
+嘛其实就是二叉树的中序遍历~
+
 ## Solution
 # Definition for a binary tree node.
     class TreeNode(object):
