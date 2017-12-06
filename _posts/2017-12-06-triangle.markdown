@@ -1,0 +1,49 @@
+---
+layout:     post
+title:      "120. Triangle"
+subtitle:   "120. Triangle"
+date:       2017-12-06 20:03:54
+author:     "Sandra"
+catalog: true
+tags:
+    - Leetcode
+    - Dynamic Programming
+---
+
+# 120. Triangle
+
+## Description:
+
+Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+For example, given the following triangle
+
+<p>[</p>
+<p>[2],</p>
+<p>[3,4],</p>
+<p>[6,5,7],</p>
+<p>[4,1,8,3]</p>
+<p>]</p>
+
+The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+
+
+## Solution
+
+<p>采用由下到上的思想, 这样最后只需要取出dp[0][0]</p>
+<p>本层每个结点的结果根据下面一行的路基累计和而计算, 要么取左边的, 要么取右边的, 两者取最小的即可</p>
+<p>状态转移方程：triangle[i][j] += min(triangle[i + 1][j], triangle[i + 1][j + 1])</p>
+
+    class Solution(object):
+        def minimumTotal(self, triangle):
+            """
+            :type triangle: List[List[int]]
+            :rtype: int
+            """
+            n = len(triangle) 
+            # 状态转移方程: triangle[i][j] += min(triangle[i+1][j+1],triangle[i+1][j]) 
+            for i in range(n - 2, -1, -1):
+                for j in range(i+1):          
+                    triangle[i][j] += min(triangle[i+1][j+1],triangle[i+1][j])    
+            
+            return triangle[0][0]
